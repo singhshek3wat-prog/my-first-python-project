@@ -1,0 +1,9 @@
+from my_first_python_project.cli import greet
+
+
+def test_greet_default():
+    assert greet() == "Hello, World!"
+
+
+def test_greet_custom():
+    assert greet("GitHub") == "Hello, GitHub!"
