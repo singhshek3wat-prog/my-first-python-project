@@ -3,20 +3,22 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "my-first-python-project"
+name = "task-manager"
 version = "0.1.0"
-description = "A simple starter Python project"
+description = "A professional task management CLI application"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [
   { name = "Your Name" }
 ]
+keywords = ["task", "cli", "productivity", "management"]
 
 [project.scripts]
-my-first-python-project = "my_first_python_project.cli:main"
+task-manager = "task_manager.cli:main"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+testpaths = ["tests"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
